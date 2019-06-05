@@ -8,7 +8,7 @@ from keras.preprocessing.image import ImageDataGenerator
 classifier = Sequential()
 
 # Step 1: Convolution
-classifier.add(Conv2D(32, (3, 3), input_shape=(64, 64, 3), activation='relu'))
+classifier.add(Conv2D(32, (3, 3), input_shape=(128, 128, 3), activation='relu'))
 
 # Step 2: Pooling
 classifier.add(MaxPooling2D(pool_size=(2, 2)))
@@ -30,24 +30,22 @@ classifier.add(Dense(units=1, activation='sigmoid'))
 classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Fitting the CNN to the images
-train_datagen = ImageDataGenerator(
-  rescale=1./255,
-  shear_range=0.2,
-  zoom_range=0.2,
-  horizontal_flip=True
-)
-test_datagen = ImageDataGenerator(
-  rescale=1./255
-)
-training_set = train_datagen.flow_from_directory(
-  'data_grayscale/train',
-  target_size=(64, 64),
+training_set = ImageDataGenerator(
+  rescale = 1. / 255,
+  rotation_range = 180.,
+  horizontal_flip = True
+).flow_from_directory(
+  'dataset_resized_normalized/train',
+  target_size=(128, 128),
   batch_size=32,
   class_mode='binary'
 )
-test_set = test_datagen.flow_from_directory(
-  'data_grayscale/validation',
-  target_size=(64, 64),
+
+test_set = ImageDataGenerator(
+  rescale=1. / 255,
+).flow_from_directory(
+  'dataset_resized_normalized/validation',
+  target_size=(128, 128),
   batch_size=32,
   class_mode='binary'
 )
@@ -55,10 +53,10 @@ test_set = test_datagen.flow_from_directory(
 # Train the model
 classifier.fit_generator(
   training_set,
-  steps_per_epoch=480,
+  steps_per_epoch=420,
   epochs=5,
   validation_data=test_set,
-  validation_steps=48
+  validation_steps=180
 )
 
 # Save the model
