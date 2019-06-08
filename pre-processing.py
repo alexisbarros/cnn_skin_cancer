@@ -1,6 +1,6 @@
 from PIL import Image
 from skimage import color, img_as_float
-from sklearn.preprocessing import Normalizer
+from sklearn.preprocessing import StandardScaler
 import numpy as np
 import os
 
@@ -23,15 +23,15 @@ for dir in directories:
             # Get image
             img = Image.open('dataset/' + dir + filename)
 
-            # Resize image to 128x128
-            img = img.resize((128, 128))
+            # Resize image to 256x256
+            img = img.resize((256, 256))
 
             # Convert img in to float and gray
             img = color.rgb2gray(img_as_float(img))
 
             # Normalize image and reshape
-            normalizer = Normalizer().fit(img)
-            img_normalized = np.reshape(normalizer.transform(img), 16384)
+            normalizer = StandardScaler().fit(img)
+            img_normalized = np.reshape(normalizer.transform(img), 65536)
 
             # Insert label in img array
             img_normalized = np.insert(img_normalized, 0, label)
