@@ -1,7 +1,721 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3544ec65-27f8-449e-9707-2844a5768e1c" name="Default Changelist" comment="" />
+    <list default="true" id="3544ec65-27f8-449e-9707-2844a5768e1c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nn_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roc_curve_cnn_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roc_curve_nn_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/roc_curve_svm_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/segmentation_script_rev02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sens_espec_nn_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sens_espec_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sens_espec_svm_script.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/svm_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_script.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cnn_skin_cancer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cnn_skin_cancer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_2D_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_2D_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/console_log.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000000.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000000.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000001.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000001.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000002.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000002.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000003.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000003.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000008.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000008.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000009.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000009.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000010.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000010.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000012.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000012.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000013.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000013.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000014.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000014.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000015.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000015.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000016.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000016.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000017.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000017.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000018.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000018.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000019.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000019.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000020.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000020.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000021.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000021.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000022.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000022.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000023.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000023.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000025.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000025.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000026.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000026.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000027.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000027.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000028.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000028.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000029.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000029.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000032.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000032.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000034.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000034.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000035.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000035.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000037.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000037.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000038.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000038.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000039.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000039.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000040.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000040.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000041.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000041.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000042.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000042.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000043.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000043.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000046.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000046.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000047.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000047.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000049.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000049.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000051.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000051.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000052.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000052.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000053.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000053.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000054.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000054.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000055.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000055.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000056.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000056.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000057.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000057.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000058.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000058.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000059.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000059.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000060.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000060.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000061.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000061.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000062.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000062.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000063.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000063.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000064.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000064.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000065.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000065.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000066.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000066.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000067.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000067.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000068.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000068.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000070.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000070.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000073.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000073.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000080.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000080.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000082.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000082.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000083.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000083.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000084.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000084.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000085.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000085.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000086.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000086.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000087.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000087.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000088.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000088.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000089.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000089.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000092.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000092.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000093.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000093.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000094.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000094.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000096.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000096.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000097.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000097.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000098.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000098.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000099.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000099.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000102.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000102.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000103.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000103.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000105.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000105.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000106.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000106.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000107.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000107.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000108.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000108.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000109.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000109.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000110.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000110.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000111.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000111.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000112.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000112.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000114.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000114.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000115.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000115.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000116.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000116.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000117.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000117.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000119.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000119.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000120.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000120.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000121.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000121.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000122.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000122.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000123.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000123.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000124.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000124.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000126.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000126.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000128.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000128.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000129.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000129.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000130.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000130.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000132.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000132.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000133.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000133.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000134.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000134.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000135.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000135.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000136.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000136.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000137.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000137.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000138.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000138.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000177.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000177.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000178.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000178.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000179.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000179.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000180.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000180.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000181.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000181.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000182.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000182.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000184.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000184.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000185.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000185.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000186.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000186.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000187.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000187.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000188.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000188.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000189.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000189.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000190.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000190.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000191.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000191.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000192.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000192.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000193.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000193.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000194.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000194.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000195.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000195.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000196.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000196.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000197.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000197.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000198.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000198.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000199.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000199.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000200.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000200.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000201.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000201.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000202.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000202.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000203.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000203.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000204.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000204.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000205.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000205.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000206.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000206.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000207.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000207.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000208.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000208.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000209.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000209.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000211.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000211.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000213.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000213.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000214.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000214.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000215.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000215.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000216.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000216.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000217.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000217.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000218.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000218.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000219.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000219.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000220.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000220.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000221.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000221.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000222.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000222.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000223.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000223.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000224.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000224.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000225.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000225.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000226.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000226.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000227.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000227.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000228.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000228.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000229.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000229.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000230.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000230.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000231.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000231.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000232.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000232.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000233.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000233.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000234.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000234.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000235.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000235.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000236.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000236.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000237.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000237.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000238.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000238.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000239.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000239.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000240.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000240.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000241.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000241.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000243.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000243.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000244.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000244.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000250.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000250.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000256.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000256.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000258.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000258.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000260.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000260.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000261.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000261.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000262.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000262.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000263.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000263.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000265.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000265.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000266.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000266.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000270.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000270.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000271.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000271.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000272.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000272.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000273.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000273.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000326.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000326.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000354.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000354.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000375.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000375.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000377.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000377.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000378.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000378.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000379.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000379.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000380.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000380.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000381.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000381.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000384.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000384.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000385.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000385.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000386.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000386.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000396.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000396.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000408.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000408.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000416.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000416.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000419.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000419.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000421.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000421.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000423.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000423.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000424.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000424.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000426.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000426.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000427.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000427.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000431.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000431.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000433.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000433.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000439.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000439.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000442.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000442.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000448.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000448.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000449.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000449.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000451.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000451.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000453.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000453.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000454.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000454.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000455.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000455.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000457.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000457.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000460.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000460.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000461.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000461.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000464.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000464.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000465.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000465.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000467.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000467.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000468.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000468.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000470.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000470.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000471.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000471.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000472.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000472.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000474.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000474.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000475.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000475.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000476.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000476.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000480.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000480.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000481.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000481.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000483.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000483.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000485.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000485.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000486.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000486.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000488.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000488.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000490.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000490.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000491.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000491.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000493.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000493.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000495.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000495.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000496.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000496.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000498.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000498.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000499.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000499.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000501.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000501.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000503.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000503.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000504.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000504.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000505.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000505.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000506.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000506.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000507.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000507.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000508.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000508.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000510.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000510.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000514.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000514.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000515.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000515.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000523.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000523.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000524.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000524.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000525.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000525.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000527.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000527.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000530.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000530.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000532.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000532.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000534.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000534.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000535.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000535.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000536.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000536.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000538.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000538.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000540.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000540.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000541.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000541.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000543.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000543.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000544.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000544.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0000545.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000545.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009869.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009869.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009870.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009870.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009874.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009874.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009875.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009875.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009878.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009878.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009880.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009880.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009881.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009881.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009883.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009883.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009884.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009884.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009885.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009885.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009888.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009888.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009889.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009889.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009891.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009891.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009892.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009892.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009893.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009893.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009895.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009895.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009896.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009896.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009904.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009904.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009906.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009906.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009909.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009909.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009911.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009911.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009914.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009914.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009917.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009917.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009929.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009929.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009930.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009930.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009931.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009931.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009932.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009932.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009933.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009933.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009935.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009935.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009936.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009936.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009939.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009939.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009940.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009940.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009941.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009941.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009942.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009942.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009947.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009947.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009949.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009949.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009952.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009952.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009953.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009953.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009956.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009956.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009958.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009958.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009962.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009962.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009963.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009963.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009964.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009964.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009965.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009965.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009966.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009966.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009967.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009967.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009969.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009969.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/benign/ISIC_0009972.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0009972.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000013.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000013.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000022.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000022.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000026.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000026.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000029.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000029.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000035.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000035.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000040.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000040.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000046.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000046.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000049.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000049.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000054.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000054.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000056.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000056.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000139.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000139.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000141.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000141.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000142.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000142.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000143.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000143.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000145.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000145.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000147.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000147.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000148.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000148.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000149.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000149.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000150.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000150.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000151.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000151.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000152.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000152.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000153.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000153.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000154.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000154.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000155.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000155.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000156.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000156.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000157.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000157.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000159.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000159.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000161.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000161.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000162.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000162.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000163.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000163.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000164.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000164.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000165.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000165.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000166.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000166.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000167.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000167.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000168.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000168.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000171.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000171.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000172.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000172.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000173.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000173.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000174.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000174.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000175.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000175.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000176.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000176.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000279.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000279.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000280.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000280.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000285.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000285.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000288.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000288.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000291.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000291.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000292.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000292.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000294.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000294.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000390.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000390.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000393.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000393.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000394.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000394.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000395.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000395.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000398.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000398.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000404.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000404.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000406.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000406.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000410.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000410.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000411.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000411.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000414.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000414.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000420.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000420.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000434.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000434.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000441.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000441.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000444.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000444.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000445.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000445.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000450.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000450.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000459.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000459.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000463.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000463.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000466.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000466.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000469.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000469.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000482.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000482.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000484.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000484.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000511.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000511.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000513.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000513.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000516.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000516.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000517.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000517.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000518.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000518.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000519.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000519.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000521.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000521.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000522.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000522.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000526.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000526.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000531.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000531.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000533.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000533.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000548.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000548.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000549.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000549.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000550.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000550.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000551.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000551.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000552.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000552.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0000553.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0000553.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001102.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001102.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001103.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001103.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001105.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001105.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001106.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001106.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001110.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001110.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001112.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001112.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001118.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001118.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001119.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001119.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001121.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001121.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001124.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001124.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001125.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001125.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001126.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001126.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001128.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001128.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001132.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001132.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001134.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001134.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001135.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001135.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001137.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001137.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001140.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001140.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001143.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001143.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001148.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001148.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001151.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001151.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001152.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001152.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001154.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001154.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001157.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001157.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0001159.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0001159.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009868.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009868.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009882.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009882.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009886.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009886.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009897.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009897.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009898.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009898.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009905.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009905.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009910.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009910.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009950.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009950.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009960.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009960.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009971.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009971.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009984.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009984.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0009993.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0009993.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010000.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010000.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010016.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010016.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010023.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010023.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010024.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010024.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010034.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010034.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010036.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010036.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010039.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010039.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010056.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010056.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010080.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010080.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010081.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010081.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010089.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010089.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010094.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010094.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010119.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010119.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010120.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010120.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010131.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010131.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010137.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010137.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010140.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010140.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010145.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010145.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010156.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010156.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010174.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010174.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010175.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010175.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010189.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010189.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010194.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010194.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010207.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010207.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010210.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010210.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010225.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010225.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010235.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010235.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010240.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010240.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010251.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010251.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010265.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010265.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010267.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010267.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010280.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010280.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010283.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010283.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010295.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010295.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010299.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010299.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010313.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010313.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010319.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010319.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010321.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010321.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010349.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010349.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010350.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010350.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010358.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010358.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010360.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010360.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010364.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010364.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010369.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010369.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010372.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010372.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010379.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010379.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010380.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010380.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010385.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010385.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010388.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010388.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010391.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010391.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010392.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010392.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010393.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010393.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010394.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010394.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010397.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010397.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010398.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010398.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010400.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010400.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010401.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010401.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010407.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010407.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010410.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010410.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010411.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010411.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010416.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010416.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010426.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010426.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010432.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010432.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010441.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010441.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010466.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010466.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010468.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010468.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010470.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010470.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010476.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010476.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010485.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010485.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010514.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010514.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010516.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010516.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010527.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010527.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010533.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010533.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010534.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010534.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010536.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010536.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010537.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010537.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010543.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010543.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010548.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010548.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010551.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010551.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010559.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010559.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010576.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010576.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010587.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010587.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010591.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010591.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010596.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010596.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010597.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010597.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010630.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010630.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010648.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010648.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010652.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010652.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010653.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010653.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010655.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010655.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010663.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010663.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010664.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010664.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010690.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010690.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010714.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010714.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010723.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010723.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010729.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010729.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010730.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010730.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010746.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010746.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010754.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010754.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010757.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010757.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010759.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010759.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010772.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010772.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010782.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010782.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010784.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010784.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010785.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010785.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010789.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010789.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010790.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010790.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010792.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010792.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010796.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010796.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010797.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010797.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010799.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010799.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010803.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010803.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010808.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010808.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010810.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010810.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010812.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010812.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010834.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010834.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010852.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010852.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010860.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010860.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010862.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010862.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010863.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010863.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010876.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010876.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010883.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010883.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010890.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010890.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010900.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010900.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010917.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010917.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010925.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010925.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010934.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010934.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010942.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010942.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010965.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010965.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010977.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010977.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010978.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010978.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010982.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010982.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010990.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010990.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0010995.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0010995.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011007.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011007.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011012.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011012.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011013.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011013.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011030.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011030.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011039.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011039.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011040.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011040.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011095.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011095.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011099.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011099.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011112.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011112.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011118.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011118.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011121.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011121.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011122.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011122.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011125.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011125.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011130.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011130.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011132.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011132.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011135.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011135.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011136.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011136.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011137.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011137.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011139.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011139.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011140.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011140.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011142.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011142.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011151.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011151.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011158.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011158.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011163.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011163.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011166.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011166.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011169.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011169.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011176.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011176.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011185.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011185.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011194.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011194.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011196.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011196.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011210.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011210.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011247.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011247.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011260.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011260.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011264.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011264.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011267.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011267.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011268.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011268.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011269.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011269.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011270.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011270.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011273.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011273.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011276.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011276.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011285.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011285.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011286.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011286.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011288.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011288.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011295.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011295.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011305.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011305.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011315.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011315.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011329.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011329.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011334.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011334.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011348.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011348.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011349.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011349.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011350.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011350.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/train/malignant/ISIC_0011356.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/train/malignant/ISIC_0011356.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009973.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009973.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009974.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009974.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009975.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009975.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009977.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009977.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009981.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009981.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009985.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009985.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009986.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009986.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009987.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009987.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009991.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009991.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009994.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009994.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009996.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009996.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0009998.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0009998.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010003.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010003.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010006.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010006.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010009.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010009.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010013.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010013.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010014.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010014.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010015.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010015.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010018.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010018.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010019.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010019.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010021.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010021.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010028.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010028.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010037.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010037.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010044.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010044.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010058.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010058.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010059.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010059.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010062.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010062.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010066.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010066.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010070.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010070.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010078.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010078.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010085.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010085.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010091.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010091.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010092.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010092.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010093.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010093.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010098.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010098.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010110.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010110.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/benign/ISIC_0010117.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/benign/ISIC_0010117.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011366.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011366.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011369.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011369.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011370.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011370.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011387.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011387.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011396.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011396.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011399.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011399.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011403.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011403.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011405.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011405.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011428.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011428.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011429.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011429.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011430.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011430.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011434.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011434.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011435.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011435.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011436.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011436.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011438.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011438.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011439.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011439.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011460.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011460.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011463.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011463.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011471.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011471.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011480.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011480.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011481.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011481.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011482.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011482.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011483.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011483.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011484.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011484.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011488.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011488.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011489.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011489.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011490.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011490.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011491.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011491.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011493.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011493.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011494.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011494.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011495.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011495.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011496.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011496.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011497.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011497.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011498.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011498.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011499.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011499.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011500.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011500.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataset_normalized/validation/malignant/ISIC_0011504.jpg.png" beforeDir="false" afterPath="$PROJECT_DIR$/dataset_normalized [OLD]/validation/malignant/ISIC_0011504.jpg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pre-processing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/trained_model_rev001.h5" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +732,12 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>path_to</find>
+      <find>Dropout</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,14 +746,30 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/segmentation.py" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/teste.py" />
         <option value="$PROJECT_DIR$/neural_network_model.py" />
         <option value="$PROJECT_DIR$/model.py" />
         <option value="$PROJECT_DIR$/cnn_1D_model.py" />
         <option value="$PROJECT_DIR$/naive_bayes_model.py" />
-        <option value="$PROJECT_DIR$/cnn_2D_model.py" />
         <option value="$PROJECT_DIR$/pre-processing.py" />
+        <option value="$PROJECT_DIR$/sementation_script.py" />
+        <option value="$PROJECT_DIR$/resize_brightness_script.py" />
+        <option value="$PROJECT_DIR$/segmentation_script_rev02.py" />
+        <option value="$PROJECT_DIR$/segmentation_script.py" />
+        <option value="$PROJECT_DIR$/test_script.py" />
+        <option value="$PROJECT_DIR$/sens_espec_script_svm.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/cnn_2D_model.py" />
+        <option value="$PROJECT_DIR$/crop_script.py" />
+        <option value="$PROJECT_DIR$/dataset_to_txt.py" />
+        <option value="$PROJECT_DIR$/nn_model.py" />
+        <option value="$PROJECT_DIR$/roc_curve_cnn_script.py" />
+        <option value="$PROJECT_DIR$/roc_curve_nn_script.py" />
+        <option value="$PROJECT_DIR$/roc_curve_svm_script.py" />
+        <option value="$PROJECT_DIR$/sens_espec_nn_script.py" />
+        <option value="$PROJECT_DIR$/sens_espec_script.py" />
+        <option value="$PROJECT_DIR$/sens_espec_svm_script.py" />
+        <option value="$PROJECT_DIR$/svm_model.py" />
       </list>
     </option>
   </component>
@@ -56,6 +792,10 @@
               <item name="cnn_skin_cancer" type="b2602c69:ProjectViewProjectNode" />
               <item name="cnn_skin_cancer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cnn_skin_cancer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -64,8 +804,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Softwares (instaladores)/Git-2.21.0-64-bit.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,8 +824,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnn_2D_model">
-    <configuration name="cnn_1D_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.roc_curve_nn_script">
+    <configuration name="nn_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cnn_skin_cancer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -92,7 +837,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn_1D_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/nn_model.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -101,7 +846,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="cnn_2D_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="roc_curve_nn_script" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cnn_skin_cancer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -113,7 +858,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/cnn_2D_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roc_curve_nn_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -122,7 +867,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="naive_bayes_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="roc_curve_svm_script" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cnn_skin_cancer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -134,7 +879,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/naive_bayes_model.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/roc_curve_svm_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -143,7 +888,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pre-processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="sens_espec_nn_script" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="cnn_skin_cancer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -155,7 +900,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pre-processing.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sens_espec_nn_script.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -187,11 +932,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cnn_2D_model" />
-        <item itemvalue="Python.pre-processing" />
-        <item itemvalue="Python.cnn_1D_model" />
+        <item itemvalue="Python.roc_curve_nn_script" />
+        <item itemvalue="Python.sens_espec_nn_script" />
         <item itemvalue="Python.svm_model" />
-        <item itemvalue="Python.naive_bayes_model" />
+        <item itemvalue="Python.nn_model" />
+        <item itemvalue="Python.roc_curve_svm_script" />
       </list>
     </recent_temporary>
   </component>
@@ -209,125 +954,212 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-1" y="0" width="1368" height="715" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667773" visible="true" weight="0.16443452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667773" visible="true" weight="0.24125093" />
       <window_info id="Structure" order="1" sideWeight="0.50332224" side_tool="true" weight="0.49620637" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46153846" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32869565" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924242" visible="true" weight="0.57391304" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32869565" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007576" side_tool="true" weight="0.46086955" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32869565" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/PIL/Image.py">
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/malignant/ISIC_0000312.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0000001.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0000003.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010134.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010133.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010132.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010130.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010129.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010128.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010127.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010126.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010125.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010124.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010123.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0010121.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/malignant/ISIC_0000167.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_segmented/benign/ISIC_0000348.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_segmented/malignant/ISIC_0000002.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_segmented/malignant/ISIC_0000004.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_segmented/malignant/ISIC_0000013.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_segmented/malignant/ISIC_0000141.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_train_segmented/benign/ISIC_0000000.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_train_resize_brightness/benign/ISIC_0000000.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_train_segmented/benign/ISIC_0000348.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_train_resize_brightness/benign/ISIC_0000348.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_train_segmented/skin_cancer_dataset.txt" />
+    <entry file="file://$PROJECT_DIR$/dataset_normalized [OLD]/train/benign/ISIC_0000000.jpg.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0000000.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0000348.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0009973.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_resize_brightness/benign/ISIC_0000190.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_crop/common_nevus/ISIC_0000348.jpg" />
+    <entry file="file://$PROJECT_DIR$/dataset_kaggle_lesion/train/common_nevus/3.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_kaggle_lesion/train/melanoma/11.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_kaggle_lesion/validation/common_nevus/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_script.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="2003" selection-start-line="2003" selection-end-line="2003" />
+        <state relative-caret-position="279">
+          <caret line="33" column="14" selection-end-line="33" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/segmentation.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataset/skin_cancer_dataset.txt" />
-    <entry file="file://$PROJECT_DIR$/dataset/benign/ISIC_0000000.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/neural_network_model.py">
+    <entry file="file://$PROJECT_DIR$/cnn_2D_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="18" column="46" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
           <folding>
-            <element signature="e#0#52#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crop_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataset_to_txt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nn_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resize_brightness_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roc_curve_cnn_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roc_curve_nn_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/roc_curve_svm_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_script_rev02.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="20" column="75" selection-start-line="20" selection-start-column="75" selection-end-line="20" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/segmentation_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sens_espec_nn_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sens_espec_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sens_espec_svm_script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/svm_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="240">
+          <caret line="16" column="97" selection-start-line="16" selection-start-column="97" selection-end-line="16" selection-end-column="97" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/naive_bayes_model.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/knn_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cnn_1D_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="41" selection-start-line="6" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="31" selection-end-line="59" selection-end-column="1" />
-          <folding>
-            <element signature="e#18#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teste.png" />
-    <entry file="file://$PROJECT_DIR$/cnn_2D_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="61" column="50" selection-start-line="61" selection-start-column="50" selection-end-line="61" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/teste.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pre-processing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="12" column="15" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
         </state>
       </provider>
     </entry>

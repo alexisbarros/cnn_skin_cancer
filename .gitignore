@@ -1,1 +1,13 @@
 /venv
+
+// Datasets testes
+/dataset_kaggle
+/dataset_kaggle_lesion
+/dataset_lesion
+/dataset_lesion_mask
+/dataset_normalized [OLD]
+/dataset_original
+/dataset_original_rev02
+
+// Models
+/trained_models

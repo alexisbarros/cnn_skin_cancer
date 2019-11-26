@@ -30,33 +30,33 @@ classifier.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accur
 
 # Fitting the CNN to the images
 training_set = ImageDataGenerator(
-  rescale = 1. / 255,
-  rotation_range = 180.,
-  horizontal_flip = True
+    rescale = 1. / 255,
+    rotation_range = 180.,
+    horizontal_flip = True
 ).flow_from_directory(
-  'dataset_normalized/train',
-  target_size=(128, 128),
-  batch_size=32,
-  class_mode='binary'
+    'dataset_kaggle_lesion/train',
+    target_size=(128, 128),
+    batch_size=32,
+    class_mode='binary'
 )
 
 test_set = ImageDataGenerator(
-  rescale=1. / 255,
+    rescale=1. / 255,
 ).flow_from_directory(
-  'dataset_normalized/validation',
-  target_size=(128, 128),
-  batch_size=32,
-  class_mode='binary'
+    'dataset_kaggle_lesion/validation',
+    target_size=(128, 128),
+    batch_size=32,
+    class_mode='binary'
 )
 
 # Train the model
 classifier.fit_generator(
-  training_set,
-  steps_per_epoch=620,
-  epochs=10,
-  validation_data=test_set,
-  validation_steps=74
+    training_set,
+    steps_per_epoch=2637 // 32,
+    epochs=50,
+    validation_data=test_set,
+    validation_steps=660 // 32
 )
 
 # Save the model
-classifier.save_weights('trained_model_rev001.h5')
+classifier.save_weights('trained_model_rev006.h5')
